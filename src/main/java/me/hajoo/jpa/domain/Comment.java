@@ -15,7 +15,7 @@ public class Comment {
 
     String content;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "board_id")
     Board board;
 }

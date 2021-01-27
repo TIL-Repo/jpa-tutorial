@@ -22,7 +22,7 @@ public class Board {
     List<Comment> comments = new ArrayList<>();
 
     public void addComment(Comment comment){
-        // comment.setBoard(this); 방법1
+        comment.setBoard(this);
         comments.add(comment);
     }
 }
